@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.mqrev20.app.MainActivity">
+
+    <LinearLayout
+        android:background="@color/blue_light"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:src="@drawable/mquesterico"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@null"/>
+        <TextView
+            android:text="Add Quest"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:textSize="30sp"
+            android:paddingLeft="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPersonName"
+            android:hint="Quest Name"
+            android:textColorHint="@color/grey"
+            android:ems="10"
+            android:id="@+id/txtQuestName" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            android:textColorHint="@color/grey"
+            android:ems="10"
+            android:id="@+id/txtName"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:hint="e-mail"
+            android:textColorHint="@color/grey"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/txtemail"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPostalAddress"
+            android:hint="Adress"
+            android:textColorHint="@color/grey"
+            android:ems="10"
+            android:id="@+id/txtAdress"
+            android:layout_gravity="center_horizontal" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPostalAddress"
+            android:hint="Adress"
+            android:textColorHint="@color/grey"
+            android:ems="10"
+            android:id="@+id/txtAdress2"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/addBtn"
+            android:background="@color/blue"
+            android:textSize="22sp"
+            android:layout_marginTop="40dp"
+            android:text="Add Quest"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
