@@ -1,58 +1,85 @@
-<?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-
-    <ImageView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:id="@+id/ivContactImage" />
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.mqrev20.app.MainActivity">
 
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
+        android:background="@color/blue_light"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Quest Name"
-            android:id="@+id/questName"
-            android:layout_gravity="left|center_vertical"/>
 
+        <ImageButton
+            android:src="@drawable/mquesterico"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@null"/>
         <TextView
+            android:text="Quest Lsit"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:textSize="30sp"
+            android:paddingLeft="35dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Contact Name"
-            android:id="@+id/contactName"
-            android:layout_gravity="left|center_vertical"/>
+            android:layout_height="wrap_content" />
+</LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Email"
-            android:id="@+id/phoneNumber"
-            android:layout_gravity="left|center_vertical"
-            android:layout_marginTop="5dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Email"
-            android:id="@+id/emailAddress"
-            android:layout_gravity="left|center_vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:text="Quest Name"
+                android:id="@+id/lviquestName"
+                android:layout_gravity="left|center_vertical"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Address"
-            android:id="@+id/cAddress"
-            android:layout_gravity="left|center_vertical"/>
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Name"
+                android:id="@+id/lvicontactName"
+                android:layout_gravity="left|center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:text="Email"
+                android:id="@+id/lviemailadress"
+                android:layout_gravity="left|center_vertical"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:text="Adress"
+                android:id="@+id/lviAddress1"
+                android:layout_gravity="left|center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:text="Address"
+                android:id="@+id/lviAddress2"
+                android:layout_gravity="left|center_vertical"/>
+
+
 
 </LinearLayout>
+
+
+

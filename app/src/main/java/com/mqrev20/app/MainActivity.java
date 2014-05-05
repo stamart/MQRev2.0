@@ -78,10 +78,12 @@ public class MainActivity extends Activity {
         });
     }
 
-    private class ContacListAdapter extends ArrayAdapter<ContactList>;
-        public ContacListAdapter(){
-            super(MainActivity.this);
+    private class ContacListAdapter extends ArrayAdapter<ContactList> {
+        public ContacListAdapter() {
+            super(MainActivity.this, R.layout.listview_item, Contactlists);
+
         }
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
